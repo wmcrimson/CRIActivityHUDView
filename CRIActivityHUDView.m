@@ -25,19 +25,6 @@
     return self;
 }
 
-- (void)dealloc
-{
-    [_textLabel removeFromSuperview];
-    _textLabel = nil;
-	
-    [_detailTextLabel removeFromSuperview];
-    _detailTextLabel = nil;
-	
-    [_activityIndicatorView removeFromSuperview];
-    _activityIndicatorView = nil;
-    
-    [super dealloc];
-}
 
 - (UILabel *)textLabel
 {
@@ -50,7 +37,6 @@
         _textLabel.shadowColor = [UIColor lightGrayColor];
         _textLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
         _textLabel.textAlignment = UITextAlignmentCenter;
-		[_textLabel autorelease];
     }
     
     return _textLabel;
@@ -67,7 +53,6 @@
         _detailTextLabel.shadowColor = [UIColor lightGrayColor];
         _detailTextLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
         _detailTextLabel.textAlignment = UITextAlignmentCenter;
-		[_detailTextLabel autorelease];
     }
     
     return _detailTextLabel;
@@ -79,8 +64,7 @@
     {
         _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
         _activityIndicatorView.hidesWhenStopped = YES;
-        [_activityIndicatorView startAnimating];  
-		[_activityIndicatorView autorelease];    
+        [_activityIndicatorView startAnimating];    
     }
     return _activityIndicatorView;
 }

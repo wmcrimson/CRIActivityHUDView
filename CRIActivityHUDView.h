@@ -9,7 +9,7 @@
 #import "CRIGradientView.h"
 
 @interface CRIActivityHUDView : CRIGradientView
-@property (nonatomic, assign) IBOutlet UILabel *textLabel;
-@property (nonatomic, assign) IBOutlet UILabel *detailTextLabel;
-@property (nonatomic, assign) IBOutlet UIActivityIndicatorView *activityIndicatorView;
+@property (nonatomic, strong) IBOutlet UILabel *textLabel;
+@property (nonatomic, strong) IBOutlet UILabel *detailTextLabel;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 @end
