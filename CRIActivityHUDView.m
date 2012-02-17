@@ -76,7 +76,6 @@
     CGFloat width = CGRectGetWidth(bounds) - 20.0f;
     CGRect frame = CGRectMake(10.0f, 30.0f, width, 20.0f);
 	_textLabel.frame = frame;
-	frame = CGRectMake(10.0f, CGRectGetHeight(self.bounds) - 100.0f, width, 20.0f);
 	_activityIndicatorView.center = center;
 }
 @end
