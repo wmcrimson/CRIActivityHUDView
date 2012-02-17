@@ -25,7 +25,6 @@
     return self;
 }
 
-
 - (UILabel *)textLabel
 {
     if(nil == _textLabel)
