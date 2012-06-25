@@ -5,6 +5,10 @@
 //  Copyright 2011 Crimson Research, Inc. All rights reserved.
 //
 
+#if !__has_feature(objc_arc)
+#  error Please compile this class with ARC (-fobjc-arc).
+#endif
+
 #import "CRIActivityHUDView.h"
 
 @implementation CRIActivityHUDView
