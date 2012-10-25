@@ -39,7 +39,7 @@
         _textLabel.textColor = [UIColor whiteColor];
         _textLabel.shadowColor = [UIColor lightGrayColor];
         _textLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
-        _textLabel.textAlignment = UITextAlignmentCenter;
+        _textLabel.textAlignment = NSTextAlignmentCenter;
     }
     
     return _textLabel;
@@ -55,7 +55,7 @@
         _detailTextLabel.textColor = [UIColor whiteColor];
         _detailTextLabel.shadowColor = [UIColor lightGrayColor];
         _detailTextLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
-        _detailTextLabel.textAlignment = UITextAlignmentCenter;
+        _detailTextLabel.textAlignment = NSTextAlignmentCenter;
     }
     
     return _detailTextLabel;
