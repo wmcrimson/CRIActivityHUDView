@@ -12,10 +12,6 @@
 #import "CRIActivityHUDView.h"
 
 @implementation CRIActivityHUDView
-@synthesize textLabel = _textLabel;
-@synthesize detailTextLabel = _detailTextLabel;
-@synthesize activityIndicatorView = _activityIndicatorView;
-
 - (id)initWithFrame:(CGRect)frame
 {    
     self = [super initWithFrame:frame];
